@@ -1,0 +1,223 @@
+.product {
+    padding-top: 40px;
+    padding-bottom: 58px;
+    background-color: rgba(229, 229, 229, 0.308);
+}
+/* оформление слайдеров */
+.sliders {
+    display: flex;
+    
+/* slider-nav */
+}
+.slider-nav {
+    margin-right: 30px;
+    max-width: 70px;
+    min-width: 70px;
+    height: 470px;
+    position: relative;
+    
+}
+.slider-nav__img {
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.slider-nav__img:hover {
+    transform: scale(1.1);
+}
+.slider-nav__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slick-vertical .slick-slide {
+    height: 70px;
+}
+.slick-track {
+    height: 470px;
+}
+/* slider-for */
+.slider-for {
+    width: 470px;
+}
+.slider-for__img {
+    background-color: white;
+    position: relative;
+    width: 470px;
+    height: 470px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.slider-for__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 130px;
+    max-height: 415px;
+}
+
+/* стрелки навигации */
+.next {
+    position: absolute;
+    bottom: 0px;
+    background: url(../img/product/Vector.svg) no-repeat center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+}
+
+/* оформление текста (col-6) */
+.product-subtitle {
+    margin-bottom: 10px;
+}
+.product-subtitle a span {
+    font-size: 18px;
+    line-height: 24px;
+    color: #666666;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.product-subtitle a:hover,
+.product-subtitle a span:hover {
+    color: #049FFB;
+    text-decoration: none;
+}
+.product-title {
+    margin-bottom: 26px;
+    font-size: 36px;
+    line-height: 100%;
+    color: #333333;
+    font-weight: 600;
+    max-width: 545px;
+}
+.manudacturer,.vendor,.order, .price {
+    font-size: 18px;
+    line-height: 32px;
+    color: #666666;
+}
+.manudacturer span,
+.vendor span,
+.order span,
+.price span {
+    font-weight: 500;
+    color: black;
+}
+.order {
+    margin-bottom: 30px;
+}
+.bord {
+    height: 0.5px;
+    background-color: rgba(126, 128, 132, 0.295);
+}
+.price {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.product-button {
+    padding: 14px 40px 14px 40px;
+    font-size: 20px;
+    line-height: 21px;
+    color: #FDFDFD;
+    background: linear-gradient(90deg, #1DA1F2 0%, #009FFC 100%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s;
+}
+.product-button:hover {
+    background: linear-gradient(90deg, #3FB3F9 0%, #009FFC 100%);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(4, 159, 251, 0.12),
+    0px 2px 10px rgba(4, 159, 251, 0.3);
+}
+
+@media screen and (max-width: 1199px) {
+    .product-col {
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .slider-nav {
+        display: none;
+    }
+    .product-col {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .product-title {
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .product-col {
+        padding-left: 15px;
+    }
+    .slider-for {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .product {
+        display: none;
+    }
+    .product-small {
+        padding-top: 115px;
+        display: block;
+    }
+    .product-title {
+        font-size: 36px;
+    }
+    .sliders {
+        max-width: 545px;
+    }
+    .slider-for {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .sliders-for__img {
+        width: 100%;
+    }
+    .bord {
+        max-width: 545px;
+    }
+}
+@media screen and (min-width: 855px) {
+    .product {
+        display: block;
+    }
+
+    .product-small {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .product-button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 463px) {
+    .product-title {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .product-title {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 338px) {
+    .product-title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,73 @@
+.error {
+    padding-top: 267px;
+    padding-bottom: 206px;
+    background-color: rgba(229, 229, 229, 0.26);
+    text-align: center;
+}
+.error-img {
+    margin-bottom: 45px;
+}
+.error-text {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #666666;
+    max-width: 369px;
+}
+.error-text a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.error-text a:hover {
+    text-decoration: none;
+    color: #049FFB;
+}
+.error-button {
+    padding: 14px 40px 17px 40px;
+    font-size: 20px;
+    line-height: 21px;
+    color: #FDFDFD;
+    border: none;
+    background: linear-gradient(90deg, #1DA1F2 0%, #009FFC 100%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.error-button:hover {
+    background: linear-gradient(90deg, #3FB3F9 0%, #009FFC 100%);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(4, 159, 251, 0.12),
+    0px 2px 10px rgba(4, 159, 251, 0.3);
+}
+
+
+@media screen and (max-width: 499px) {
+    .error-img img {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 371px) {
+    .error-text {
+        font-size: 21px;
+    }
+    .error-img img {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .error-text {
+        font-size: 21px;
+    }
+
+    .error-img img {
+        width: 270px;
+    }
+}
+@media screen and (max-width: 326px) {
+    .error-text {
+        font-size: 20px;
+    }
+}

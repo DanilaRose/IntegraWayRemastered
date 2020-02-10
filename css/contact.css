@@ -1,0 +1,133 @@
+.contact {
+    padding-top: 80px;
+    background-color: rgba(229, 229, 229, 0.26);
+}
+.container {
+    
+}
+.contacts {
+    margin: 0 auto;
+    max-width: 830px;
+}
+/* заголовки */
+.contact-title {
+    margin-bottom: 20px;
+    font-size: 46px;
+    line-height: 45px;
+    color: #333333;
+}
+.contact-subtitle {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #666666;
+}
+
+/* инпуты */
+
+.form-input input, textarea {
+    padding: 16px 0 16px 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #999999;
+    letter-spacing: -0.4px;
+    width: 100%;
+    transition: all 0.3s;
+    border: none;
+    border-radius: 8px;
+}
+.form-input input:hover,
+.form-input input:focus {
+    border: 1px solid #049FFB;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(4, 159, 251, 0.12),
+    0px 2px 10px rgba(4, 159, 251, 0.3);
+}
+textarea {
+    max-height: 150px;
+}
+textarea:hover, textarea:focus {
+    border: 1px solid #049FFB;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(4, 159, 251, 0.12),
+    0px 2px 10px rgba(4, 159, 251, 0.3);
+}
+
+/* кнопка */
+.form-button {
+    margin-top: 31px;
+    margin-bottom: 82px;
+    padding: 14px 40px 19px 40px;
+    font-size: 20px;
+    line-height: 21px;
+    color: #FDFDFD;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #1DA1F2 0%, #009FFC 100%);
+    transition: all 0.3s;
+}
+.form-button:hover {
+    background: linear-gradient(90deg, #3FB3F9 0%, #009FFC 100%);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(4, 159, 251, 0.12),
+    0px 2px 10px rgba(4, 159, 251, 0.3);
+}
+
+/* оформление col-3 */
+.label {
+    margin-top: 19px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #999999;
+}
+.name a {
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #666666;
+    transition: all 0.3s;
+}
+.name a:hover {
+    color: #049FFB;
+    text-decoration: none;
+}
+.socials img {
+    filter: grayscale(100);
+    transition: all 0.3s;
+}
+.socials img:first-child {
+    padding-right: 10px;
+}
+.socials img:hover {
+    filter: grayscale(0);
+}
+
+@media screen and (max-width: 767px) {
+    .contact {
+        display: none;
+    }
+    .contact-small {
+        display: block;
+    }
+    .form-button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+        display: block;
+    }
+    .contact-small {
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .contact-title {
+        font-size: 38px;
+    }
+}

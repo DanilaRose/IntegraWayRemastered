@@ -1,0 +1,55 @@
+@import 'head.css';
+@import 'main.css';
+@import 'features.css';
+@import 'showcase.css';
+@import 'contact.css';
+@import 'footer.css';
+@import 'product.css';
+@import 'descr.css';
+@import 'description.css';
+@import 'recomend.css';
+@import 'error.css';
+@import 'variables.css';
+
+body {
+    font-family: 'Futura new';
+}
+button:focus, div, input:focus {
+    outline: none;
+}
+a:focus {
+    outline: none;
+}
+.container-fluid {
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-fluid {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container-fluid {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-fluid {
+        max-width: 540px;
+    }
+}
+
+/* @media screen and (max-width: 415px) {
+    .container-fluid {
+        max-width: 311px;
+    }
+} */

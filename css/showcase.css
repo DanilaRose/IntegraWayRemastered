@@ -1,0 +1,320 @@
+.showcase {
+    /* padding-bottom: 160px; */
+    background-color: rgba(229, 229, 229, 0.26);
+}
+/* название категории */
+.showcase-descr {
+    padding-top: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.showcase-descr__title a {
+    font-size: 32px;
+    line-height: 38px;
+    color: #333333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.showcase-descr__subtitle a {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    opacity: 0.67;
+    transition: all 0.3s;
+}
+.showcase-descr__title a:hover,
+.showcase-descr__subtitle a:hover {
+    color: #049FFB;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/* карточка с товаром */
+.card {
+    margin-top: 30px;
+    border: none;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(0, 0, 0, 0.12),
+    0px 2px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 2px 2px 15px rgb(2, 112, 255) */
+}
+.cards:hover {
+    transform: none;
+    box-shadow: none;
+
+}
+.card-img {
+    min-width: 200px;
+    min-height: 290px;
+    position: relative;
+}
+.card-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-name {
+    padding: 15px 0 21px 19px;
+    color: #333333;
+    border-top: 1px solid rgba(229, 229, 229, 0.37);
+}
+.card-name a {
+    text-decoration: none;
+    color: #333333;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+.card-name a:hover {
+    text-decoration: none;
+    color: #049FFB;
+}
+
+
+
+
+/* Category Page */
+.category {
+}
+.flex {
+    padding-top: 21px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.showcase-menu {
+    width: 245px;
+}
+.showcase-category {
+    display: block;
+    margin-left: 55px;
+    max-width: 900px;
+}
+.category-descr .category-title a {
+    font-size: 36px;
+    line-height: 36px;
+}
+.category-subtitle a span {
+    transition: all 0.3s;
+    font-size: 18px;
+    line-height: 24px;
+}
+.category-subtitle a span:hover {
+    color: #049FFB;
+}
+
+
+/* Кнопки с номерами страниц */
+.buttons {
+    margin-top: 70px;
+}
+.page-number {
+    margin-right: 8px;
+    padding: 13px 18px;
+    border: none;
+    background: #F6F6F6;
+    border-radius: 3px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #666666;
+    transition: all 0.4s;
+}
+.page-number:last-child {
+    margin-right: 0;
+}
+.blue {
+    background: #02A0FC;
+    color: white;
+}
+
+
+/* Product Page section recomend */
+.recomend-name, .search-name {
+    padding: 15px 24px 10px 14px;
+    font-size: 18px;
+}
+.slow-dark {
+    opacity: 0.3;
+}
+.search-subtitles {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .card-img img {
+        max-width: 210px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .slick-track {
+        max-height: 360px;
+    }
+    .showcase {
+        display: none;
+    }
+    .showcase-small {
+        display: block;
+    }
+    .cards {
+        max-height: 360px;
+    }
+}
+@media screen and (min-width: 577px) {
+    .showcase {
+        display: block;
+    }
+    .showcase-small {
+        display: none;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: #049FFB;
+    }
+}
+@media screen and (max-width: 500px) {
+    .showcase-descr {
+        align-items: center;
+    }
+    .showcase-descr__title a {
+        font-size: 28px;
+    }
+    .showcase-descr__subtitle a {
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    .showcase-descr__title a {
+        font-size: 22px;
+    }
+
+    .showcase-descr__subtitle a {
+        font-size: 12px;
+    }
+
+}
+
+/* category page */
+
+@media screen and (max-width: 853px) {
+    .showcase .flex .category-menu {
+        display: none;
+    }
+    .category {
+        padding-top: 110px;
+    }
+    .showcase-category {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .category {
+        display: block;
+    }
+    .category-row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+@media screen and (max-width: 499px) {
+    .category-img {
+        min-width: 106px;
+        min-height: 165px;
+    }
+    .category-img img {
+        max-width: 106px;
+        max-height: 140px;
+    }
+}
+@media screen and (max-width: 441px) {
+    .category-name {
+        padding: 15px 0 21px 12px;
+        min-height: 65px;
+    }
+    .category-name a {
+        font-size: 20px;
+        line-height: 0;  
+    }
+}
+ @media screen and (max-width: 404px) {
+    .category-name {
+        padding: 9px 2px 0px 12px;
+        min-height: 58px;
+    }    
+    .category-name a {
+        font-size: 16px;
+    }
+} 
+@media screen and (max-width: 320px) {
+    .container-fluid {
+        padding-right: 11px;
+        padding-left: 11px;
+    }
+} 
+
+
+
+/* subcategory page */
+@media screen and (max-width: 1199px) {
+    .subcategory-name {
+        min-height: 133px;
+    }
+    .subcategory-name a {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .subcategory-name {
+        min-height: 110px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .subcategory-name {
+        padding: 15px 3px 21px 13px;
+    }
+}
+@media screen and (max-width: 478px) {
+    .subcategory-name {
+        padding: 11px 3px 0 13px;
+    }
+
+    .subcategory-name a {
+        font-size: 14px;
+        line-height: 0;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .subcategory-name {
+        padding: 3px 3px 0 10px;
+        min-height: 105px;
+    }
+
+    .subcategory-name a {
+        font-size: 13px;
+    }
+    .page-number {
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 344px) {
+    .subcategory-name {
+        padding: 3px 3px 0 10px;
+        min-height: 124px;
+    }
+
+    .subcategory-name a {
+        font-size: 13px;
+    }
+}
+
+    

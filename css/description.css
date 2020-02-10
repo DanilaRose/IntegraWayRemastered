@@ -1,0 +1,89 @@
+.description {
+    padding-bottom: 37px;
+    background-color: rgba(229, 229, 229, 0.308);
+}
+.description::after,
+.description::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #EEEEEE;
+    display: block;
+}
+.text {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.text-item {
+    margin-right: 59px;
+    font-size: 18px;
+    line-height: 23px;
+    color: black;
+    position: relative;
+    cursor: pointer;
+}
+.text-item:last-child {
+    margin-right: 0;
+}
+.dark {
+    font-weight: 600;
+}
+
+/* треугольники в description */
+.di {
+    position: relative;
+}
+.text-item img {
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+.text-item img.triangle {
+   display: block;
+}
+
+
+@media screen and (max-width: 600px) {
+    .text-item {
+        margin-right: 40px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 463px) {
+    .text-item {
+        margin-right: 30px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 422px) {
+    .text-item {
+        margin-right: 30px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 401px) {
+    .text-item {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .text {
+        padding-bottom: 15px;
+        align-items: flex-start;
+    }
+    .text-item {
+        margin-right: 20px;
+        font-size: 14px;
+        line-height: 1;
+    }
+    .text-item img {
+        top: 43px;
+    }
+}
+

@@ -1,0 +1,97 @@
+.descr {
+    background-color: rgba(229, 229, 229, 0.308);
+}
+/* оформление основного текста */
+.descr p {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.descr p span {
+    color: black;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+.descr p span:hover {
+    color: #049FFB;
+} 
+.hide {
+    display: none;
+}
+.block {
+    display: inline-block;
+}
+.none {
+    display: none;
+}
+
+/* оформление карточек */
+.descr-title {
+    margin-bottom: 31px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+.descr-card {
+    display: flex;
+    align-items: center;
+    background: #FEFEFE;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+}
+.first {
+    margin-bottom: 20px;
+}
+
+.descr-card__img {
+    padding: 8px 28px 8px 20px;
+}
+.descr-card__text {
+    max-width: 197px;
+}
+
+
+/* оформление характеристик */
+
+.specific {
+    display: none;
+}
+.blocks {
+    display: block;
+}
+.specific-title {
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.specifications {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #EEEEEE;
+}
+.item-two {
+    position: absolute;
+    left: 250px;
+}
+
+@media screen and (max-width: 991px) {
+    .coltwo {
+        display: none;
+    }
+}
+@media screen and (max-width: 389px) {
+    .item-two {
+        left: 210px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .item-two {
+        left: 181px;
+    }
+}

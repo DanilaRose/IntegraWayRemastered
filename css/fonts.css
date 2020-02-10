@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Futura New';
+    src: local('../fonts/Futura New Book Reg'), local('../fonts/Futura-New-Book-Reg'),
+        url('../fonts/FuturaNewBook-Reg.woff2') format('woff2'),
+        url('../fonts/FuturaNewBook-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewBook-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

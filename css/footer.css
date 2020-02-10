@@ -1,0 +1,89 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 78px;
+    background-color: #333333;
+}
+
+.footer p {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: lowercase;
+    color: #FEFEFE;
+    opacity: 0.5;
+}
+.footer-link a {
+    font-size: 18px;
+    line-height: 170%;
+    color: #FEFEFE;
+    text-decoration: none;
+}
+.footer-label {
+    margin-bottom: 19px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FEFEFE;
+}
+.footer-input {
+    margin-right: 6px;
+    padding: 9px 0 9px 14px;
+    font-size: 18px;
+    line-height: 140%;
+    color: #999999;
+    border: none;
+    max-width: 195px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.footer-input:hover {
+    border: 1px solid #049FFB;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(4, 159, 251, 0.12),
+    0px 2px 10px rgba(4, 159, 251, 0.3);
+}
+.footer-button {
+    padding: 13px 23px 13px 23px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+    color: white;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #1DA1F2 0%, #009FFC 100%);
+    transition: all 0.3s;
+}
+.footer-button:hover {
+    background: linear-gradient(90deg, #3FB3F9 0%, #009FFC 100%);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(4, 159, 251, 0.12),
+    0px 2px 10px rgba(4, 159, 251, 0.3);
+}
+
+@media screen and (max-width: 1209px) {
+    .footer-button {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+    .footer-small {
+        display: block;
+    }
+    .footer-link {
+        margin-bottom: 70px;
+    }
+    .footer-button {
+        margin-bottom: 70px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        display: block;
+    }
+    .footer-small {
+        display: none;
+    }
+}
