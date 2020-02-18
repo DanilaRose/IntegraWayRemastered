@@ -66,24 +66,13 @@
     }
 }
 @media screen and (max-width: 767px) {
-    .footer {
-        display: none;
+    .footer-link-first {
+        padding-top: 70px;
     }
-    .footer-small {
-        display: block;
-    }
-    .footer-link {
+    .footer-link-second {
         margin-bottom: 70px;
     }
     .footer-button {
         margin-bottom: 70px;
-    }
-}
-@media screen and (min-width: 768px) {
-    .footer {
-        display: block;
-    }
-    .footer-small {
-        display: none;
     }
 }

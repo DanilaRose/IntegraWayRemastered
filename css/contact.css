@@ -107,23 +107,8 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (max-width: 767px) {
-    .contact {
-        display: none;
-    }
-    .contact-small {
-        display: block;
-    }
     .form-button {
         width: 100%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .contact {
-        display: block;
-    }
-    .contact-small {
-        display: none;
     }
 }
 @media screen and (max-width: 320px) {
