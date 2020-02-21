@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 // Появление строки поиска
 $(document).ready(function () {
-    $('.search-img').click(function () {
+    $('.head-inner_menu__item button').click(function () {
         $('.head-search').toggleClass('input');
     });
 });
@@ -44,7 +44,11 @@ $(document).ready(function () {
     menuLink.click(function () { // при клике на три палочки
         menuLink.toggleClass('active'); // добавляем к ним .active(крестик) и три палочки меняются на крестик
         menu.toggleClass('menu_active'); // добавляем к блоку меню в бургере класс, который показывает его (изначально стоит display: block)
-        content.removeClass('contents'); // сворачиваем каталог товаров при нажатии на крестик(закрытие меню)
+        //content.removeClass('contents'); // сворачиваем каталог товаров при нажатии на крестик(закрытие меню)
+        // $('.panel-collapse').removeClass('open');
+        $('.panel-hide').removeClass('show').slideUp(350);
+        $('.panel-show').removeClass('show').slideUp(350);
+        
     });
     link.click(function () { // при клмке на элемент меню
         menu.removeClass('menu_active'); // закрываем его, убирая класс, где меню display: flex
@@ -55,35 +59,56 @@ $(document).ready(function () {
         menuLink.removeClass('active'); // меняем крестик на три палочки, убирая класс с крестиком
         content.removeClass('contents'); // к элементам каталога товаров добавляем класс, тем самым сворачивая каталог товаров, выбирая категорию при открытии меню в следующий раз
     });
-    $('.subcategory1').click(function () {
+    $('.panel-hide a').click(function () {
         menu.removeClass('menu_active');
-        menuLink.removeClass('active');
-        $('.panel-collapse').removeClass('open');   
+        menuLink.removeClass('active'); 
     });
 });
 
 
 
 // Каталог товаров (accordion) в burger menu
-$('.panel-head .click').click(function (e) {
-    e.stopPropagation();
-    var panelCollapse = $(this).children('.panel-collapse');
+// $('.panel-head .click').click(function (e) {
+//     e.stopPropagation();
+//     var panelCollapse = $(this).children('.panel-collapse').slideToggle();
 
-    if (panelCollapse.hasClass('open')) {
-        $(this).find('.panel-collapse').removeClass('open');
+//     if (panelCollapse.hasClass('open')) {
+//         $(this).find('.panel-collapse').removeClass('open');
+//     } else {
+//         panelCollapse.addClass('open');
+//     }
+    
+// });
+// $('.panel-head .click').click(function (e) {
+//     e.stopPropagation();
+
+//     $('.panel-collapse .open').not(this).removeClass('open');
+//     $(this).children('.panel-collapse').toggleClass('open');
+// });
+// $('.catalogs').click(function () {
+//     $('.cat-arrow').toggleClass('opens');
+// });
+// $('.active').click(function () {
+//     $('.cat-arrow').removeClass('opens');
+//     $('.panel-collapse').removeClass('open');
+// });
+
+// Последний каталог в бургере (РАБОЧИЙ)
+$('.catalog-burger').click(function () {
+    $('.panel-show').slideToggle(350);
+    $('.panel-hide').removeClass('show').slideUp(350);
+    $('.catalog-burger_arrow').toggleClass('opens');
+});
+$('.panel-show').click(function (e) {
+    e.preventDefault();
+    let $this = $(this);
+    if ($(this).next().hasClass('show')) {
+        $(this).next().removeClass('show').slideUp(350);
     } else {
-        panelCollapse.addClass('open');
+        $(this).parent().find('.panel-hide').removeClass('show').slideUp(350);
+        $(this).next().toggleClass('show').slideToggle(350);
     }
-});
-$('.catalogs').click(function () {
-    $('.cat-arrow').toggleClass('opens');
-});
-$('.active').click(function () {
-    $('.cat-arrow').removeClass('opens');
-    $('.panel-collapse').removeClass('open');
-});
-
-
+})
 
 // исчезновение нижней границы при открытии "По брендам"
 $(document).ready(function () {
@@ -93,16 +118,29 @@ $(document).ready(function () {
 });
 
 // Каталог товаров в main
-$(document).ready(function () {
-    $('.panel-show').click(function () {
-        $(this).next().slideToggle();
-        $(this).find('.show-arrow').toggleClass('rotate');
-        $(this).toggleClass('panel-blue');
-        // $(this).prevUntil().removeClass('panel-blue');
-        // $(this).nextAll().removeClass('panel-blue');
-    }); 
-});
+// $(document).ready(function () {
+//     $('.panel-show').click(function () {
+//         $(this).next().slideToggle();
+//         $(this).find('.show-arrow').toggleClass('rotate');
+//         $(this).toggleClass('panel-blue');
+//         // $(this).prevUntil().removeClass('panel-blue');
+//         // $(this).nextAll().removeClass('panel-blue');
+//     }); 
+// });
 
+// РАБОЧИЙ КАТАЛОГ В MAIN
+$('.cat').click(function (e) {
+    e.preventDefault();
+    
+    let $this = $(this);
+    
+    if ($(this).next().hasClass('show')) {
+        $(this).next().removeClass('show').slideUp(350);
+    } else {
+        $(this).parent().find('.subcat').removeClass('show').slideUp(350);
+        $(this).next().toggleClass('show').slideToggle(350);    
+    }
+})
 
 
 // Slider в main
@@ -219,13 +257,14 @@ $(document).ready(function () {
 
 
 // слайдер в витрине при 576px
-// $(document).ready(function () {
-//     $('.showcase-slider').slick({
-//         autoplay: false,
-//         autoplaySpeed: 3000,
-//         slidesToShow: 1,
-//   });
-// });
+$(document).ready(function () {
+    $('.showcase-slider').slick({
+        autoplay: false,
+        autoplaySpeed: 3000,
+        slidesToShow: 1.8,
+        arrows: false,
+  });
+});
 
 
 // $(document).ready(function () {
@@ -237,19 +276,19 @@ $(document).ready(function () {
 // });
 
 
-var mql = window.matchMedia('screen and (max-width: 576px)');
-if (mql.matches) {
-    // размер окна 479px или меньше
-    $('.showcase-slider').slick({
-        autoplay: false,
-        autoplaySpeed: 3000,
-        slidesToShow: 1.7,
-        arrows: false,
-    });
-} else {
-    // нет, размер окна более 479px 
-    $('.showcase-slider').slick('unslick');
-}
+// var mql = window.matchMedia('screen and (max-width: 576px)');
+// if (mql.matches) {
+//     // размер окна 479px или меньше
+//     $('.showcase-slider').slick({
+//         autoplay: false,
+//         autoplaySpeed: 3000,
+//         slidesToShow: 1.7,
+//         arrows: false,
+//     });
+// } else {
+//     // нет, размер окна более 479px 
+//     $('.showcase-slider').slick('unslick');
+// }
 
 // $(window).resize(function () {
 //     let width = $(this).width(); 

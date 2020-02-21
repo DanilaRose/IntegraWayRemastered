@@ -7,7 +7,7 @@
 /* Категории с товарами */
 
 /* panel-show */
-.panel-show {
+.cat {
     padding-top: 8px;
     padding-bottom: 7px;
     border-top: 1px solid #E5E5E5;
@@ -45,12 +45,12 @@
     transition: all 0.5s;
 }
 /* скрытая панель */
-.panel-hide {
-    margin-left: 44px;
+.subcat {
+    margin-left: 54px;
     padding-bottom: 30px;
     display: none;
 }
-.panel-hide div {
+.subcat a {
     padding-bottom: 12px;
     font-size: 18px;
     line-height: 23px;
@@ -58,10 +58,12 @@
     display: block;
     cursor: pointer;
     transition: all 0.3s;
+    text-decoration: none;
 }
-.panel-hide div:hover {
+.subcat a:hover {
     color: #049FFB;
     transform: scale(1.05);
+    text-decoration: none;
 }
 
 /* slider в main */
@@ -83,7 +85,7 @@
 .sliders-title {
     margin-left: 60px;
     position: absolute;
-    bottom: 282px;
+    bottom: 165px;
     font-size: 46px;
     line-height: 45px;
     color: #333333;
@@ -92,7 +94,7 @@
     margin-left: 60px;
     padding: 14px 38px 19px 40px;
     position: absolute;
-    bottom: 190px;
+    bottom: 80px;
     background: linear-gradient(90deg, #1DA1F2 0%, #009FFC 100%);
     font-size: 20px;
     line-height: 21px;
@@ -145,7 +147,7 @@
         left: 715px;
         bottom: 20px;
     }
-    .panel-show {
+    .cat {
         padding-top: 7px;
         padding-bottom: 6px;
     }
@@ -153,12 +155,12 @@
 
 
 @media screen and (max-width: 1199px) {
-    .panel-show {
+    .cat {
         padding-top: 2px;
         padding-bottom: 0;
         font-size: 19px;
     }
-    .panel-hide div {
+    .subcat a {
         font-size: 16px;
     }
     .slick-dots {
@@ -167,19 +169,19 @@
     }
     .sliders-title {
         margin-left: 54px;
-        bottom: 303px;
+        bottom: 130px;
         font-size: 40px;
         line-height: 44px;
     }
     .sliders-button {
         margin-left: 54px;
-        bottom: 228px;
+        bottom: 53px;
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 1194px) {
-    .panel-show {
+    .cat {
         padding-top: 6px;
         padding-bottom: 5px;
         font-size: 22px;
@@ -190,7 +192,7 @@
     }
 }
 @media screen and (max-width: 1135px) {
-    .panel-show {
+    .cat {
         padding-top: 5px;
         padding-bottom: 4px;
         font-size: 22px;
@@ -225,43 +227,43 @@
     }
 }
 @media screen and (max-width: 1090px) {
-    .panel-show {
+    .cat {
         padding-top: 4px;
         padding-bottom: 3px;
         font-size: 22px;
     }
 }
 @media screen and (max-width: 1087px) {
-    .panel-show {
+    .cat {
         width: 220px;
     }
 }
 @media screen and (max-width: 1060px) {
-    .panel-show {
+    .cat {
         padding-top: 3px;
         padding-bottom: 2px;
         font-size: 22px;
     }
 }
 @media screen and (max-width: 1015px) {
-    .panel-show {
+    .cat {
         padding-top: 2px;
         padding-bottom: 1px;
         font-size: 22px;
     }
 }
 @media screen and (max-width: 993px) {
-    .panel-show {
+    .cat {
         padding-top: 1px;
         padding-bottom: 0px;
         font-size: 20px;
     }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .main {
-        padding-bottom: 0;
+        padding-bottom: 40px;
     }
-    .panel-show {
+    .cat {
         padding-top: 0;
         padding-bottom: 0;
         font-size: 18px;
@@ -275,18 +277,18 @@
     }
     .sliders-title {
         margin-left: 26px;
-        bottom: 354px;
+        bottom: 100px;
         font-size: 28px;
         line-height: 34px;
     }
     .sliders-button {
         padding: 9px 26px 11px 25px;
         margin-left: 26px;
-        bottom: 301px;
+        bottom: 40px;
         font-size: 14px;
     }
 }
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .panel-show {
         padding-top: 0;
         padding-bottom: 0;
@@ -307,14 +309,16 @@
         bottom: 280px;
         font-size: 14px;
     }
-}
+} */
 @media screen and (max-width: 921px) {
-    .panel-show {
+    .cat {
         padding-top: 0;
         padding-bottom: 0;
         font-size: 18px;
     }
-
+    .subcat {
+        margin-left: 40px;
+    }
     .show-img {
         width: 43px;
     }
@@ -326,12 +330,12 @@
     .sliders-button {
         padding: 9px 26px 11px 25px;
         margin-left: 26px;
-        bottom: 290px;
+        bottom: 40px;
         font-size: 14px;
     }
 }
 @media screen and (max-width: 875px) {
-    .panel-show {
+    .cat {
         padding-top: 0;
         padding-bottom: 0;
         font-size: 18px;
@@ -345,16 +349,21 @@
         left: 401px;
         bottom: 143px;
     }
-
+    .sliders-title {
+        margin-left: 26px;
+        bottom: 80px;
+        font-size: 28px;
+        line-height: 34px;
+    }
     .sliders-button {
         padding: 9px 26px 11px 25px;
         margin-left: 26px;
-        bottom: 290px;
+        bottom: 25px;
         font-size: 14px;
     }
 }
 @media screen and (max-width: 861px) {
-    .panel-show {
+    .cat {
         padding-top: 0;
         padding-bottom: 0;
         font-size: 18px;
@@ -371,7 +380,7 @@
     .sliders-button {
         padding: 9px 26px 11px 25px;
         margin-left: 26px;
-        bottom: 295px;
+        bottom: 29px;
         font-size: 14px;
     }
 }
@@ -381,7 +390,7 @@
     }
 }
 @media screen and (max-width: 827px) {
-    .panel-show {
+    .cat {
         padding-top: 0;
         padding-bottom: 0;
         font-size: 17px;
@@ -399,12 +408,12 @@
     .sliders-button {
         padding: 9px 26px 11px 25px;
         margin-left: 26px;
-        bottom: 295px;
+        bottom: 30px;
         font-size: 14px;
     }
 }
 @media screen and (max-width: 793px) {
-    .panel-show {
+    .cat {
         padding-top: 0;
         padding-bottom: 0;
         font-size: 16px;
@@ -423,12 +432,12 @@
     .sliders-button {
         padding: 9px 26px 11px 25px;
         margin-left: 26px;
-        bottom: 310px;
+        bottom: 29px;
         font-size: 14px;
     }
 }
 @media screen and (max-width: 783px) {
-    .panel-show {
+    .cat {
         padding-top: 0;
         padding-bottom: 0;
         font-size: 17px;
@@ -446,13 +455,13 @@
     .sliders-button {
         padding: 9px 26px 11px 25px;
         margin-left: 26px;
-        bottom: 303px;
+        bottom: 17px;
         font-size: 14px;
     }
 
     .sliders-title {
         margin-left: 26px;
-        bottom: 362px;
+        bottom: 70px;
         font-size: 26px;
         line-height: 31px;
     }
@@ -480,7 +489,7 @@
     }
 } */
 @media screen and (max-width: 767px) {
-    .panel-show {
+    .cat {
         padding-top: 8px;
         padding-bottom: 7px;
         font-size: 24px;
@@ -494,7 +503,8 @@
     .show-img {
         width: 52px;
     }
-    .panel-hide {
+    .subcat {
+        margin-left: 60px;
         width: 150px;
     }
     .slick-dots {
@@ -505,19 +515,22 @@
     .sliders-button {
         padding: 14px 38px 19px 40px;
         margin-left: 26px;
-        bottom: 233px;
+        bottom: 34px;
         font-size: 18px;
     }
 
     .sliders-title {
         margin-left: 38px;
-        bottom: 305px;
+        bottom: 105px;
         font-size: 39px;
         line-height: 45px;
     }
+    .main-two-col {
+        padding-top: 30px;
+    }
 }
 @media screen and (max-width: 711px) {
-    .panel-show {
+    .cat {
         padding-top: 8px;
         padding-bottom: 7px;
         font-size: 24px;
@@ -533,7 +546,7 @@
         width: 52px;
     }
 
-    .panel-hide {
+    .subcat {
         width: 150px;
     }
 
@@ -545,13 +558,13 @@
     .sliders-button {
         padding: 14px 38px 19px 40px;
         margin-left: 26px;
-        bottom: 233px;
+        bottom: 30px;
         font-size: 18px;
     }
 
     .sliders-title {
         margin-left: 32px;
-        bottom: 313px;
+        bottom: 100px;
         font-size: 35px;
         line-height: 45px;
     }
@@ -565,13 +578,13 @@
     .sliders-button {
         padding: 12px 38px 13px 40px;
         margin-left: 26px;
-        bottom: 255px;
+        bottom: 32px;
         font-size: 15px;
     }
 
     .sliders-title {
         margin-left: 32px;
-        bottom: 313px;
+        bottom: 88px;
         font-size: 35px;
         line-height: 45px;
     }
@@ -583,13 +596,13 @@
     .sliders-button {
         padding: 12px 38px 13px 40px;
         margin-left: 26px;
-        bottom: 275px;
+        bottom: 38px;
         font-size: 15px;
     }
 
     .sliders-title {
         margin-left: 32px;
-        bottom: 335px;
+        bottom: 100px;
         font-size: 31px;
         line-height: 39px;
     }
@@ -604,13 +617,13 @@
     .sliders-button {
         padding: 8px 30px 9px 32px;
         margin-left: 26px;
-        bottom: 198px;
+        bottom: 28px;
         font-size: 15px;
     }
 
     .sliders-title {
         margin-left: 32px;
-        bottom: 252px;
+        bottom: 72px;
         font-size: 29px;
         line-height: 36px; 
     }
@@ -622,13 +635,13 @@
     .sliders-button {
         padding: 8px 30px 9px 32px;
         margin-left: 32px;
-        bottom: 213px;
+        bottom: 24px;
         font-size: 15px;
     }
 
     .sliders-title {
         margin-left: 32px;
-        bottom: 261px;
+        bottom: 78px;
         font-size: 24px;
         line-height: 28px;
     }
@@ -640,13 +653,13 @@
     .sliders-button {
         padding: 7px 26px 9px 28px;
         margin-left: 32px;
-        bottom: 227px;
+        bottom: 14px;
         font-size: 13px;
     }
 
     .sliders-title {
         margin-left: 32px;
-        bottom: 275px;
+        bottom: 60px;
         font-size: 22px;
         line-height: 24px;
     }
@@ -659,13 +672,13 @@
     .sliders-button {
         padding: 7px 26px 9px 28px;
         margin-left: 32px;
-        bottom: 226px;
+        bottom: 14px;
         font-size: 13px;
     }
 
     .sliders-title {
         margin-left: 32px;
-        bottom: 275px;
+        bottom: 60px;
         font-size: 21px;
         line-height: 24px;
     }
@@ -678,13 +691,13 @@
     .sliders-button {
         padding: 5px 23px 6px 25px;
         margin-left: 24px;
-        bottom: 235px;
+        bottom: 14px;
         font-size: 12px;
     }
 
     .sliders-title {
         margin-left: 24px;
-        bottom: 283px;
+        bottom: 58px;
         font-size: 20px;
         line-height: 21px;
     }

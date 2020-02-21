@@ -38,7 +38,7 @@
     height: 70px;
 }
 .slick-track {
-    height: 470px;
+    max-height: 470px;
 }
 /* slider-for */
 .slider-for {

@@ -19,12 +19,12 @@
     </head>
     <body>
 
-        <section class="head">
+        <header class="head">
             <div class="container-fluid">
-                <div class="head-head">
-                    <div class="head-head__logo"> <a href="index.html"><img src="img/head/logo.png" alt="img"></a> </div>
-                    <div class="nav-menu">
-                        <div class="nav-menu__item catalog"> <a href="#">Каталог товаров</a>
+                <div class="head-inner">
+                    <div class="head-inner_logo"> <a href="index.html"><img src="img/head/logo.png" alt="img"></a> </div>
+                    <nav class="head-inner_menu">
+                        <div class="head-inner_menu__item catalog"> <a href="#">Каталог товаров</a>
                             <img src="img/head/arrow.svg" alt="img">
                             <div class="submenu">
                                 <div class="submenu_item">
@@ -74,36 +74,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="nav-menu__item hvr-underline-from-left"><a href="#">Доставка</a></div>
-                        <div class="nav-menu__item hvr-underline-from-left"><a href="#">О нас</a></div>
-                        <div class="nav-menu__item hvr-underline-from-left"><a href="#">Контакты</a></div>
-                        <div class="nav-menu__item"><span class="EN">EN</span> / <span class="RU">RU</span></div>
-                        <div class="nav-menu__item">
+                        <div class="head-inner_menu__item hvr-underline-from-left"><a href="#">Доставка</a></div>
+                        <div class="head-inner_menu__item hvr-underline-from-left"><a href="#">О нас</a></div>
+                        <div class="head-inner_menu__item hvr-underline-from-left"><a href="#">Контакты</a></div>
+                        <div class="head-inner_menu__item"><span class="EN">EN</span> / <span class="RU">RU</span></div>
+                        <div class="head-inner_menu__item">
                             <a href="#"><img class="facebook" src="img/head/hover-facebook.svg" alt="img"></a>
                             <a href="#"><img class="insta" src="img/head/hover-insta.svg" alt="img"></a>
                         </div>
-                        <div class="nav-menu__item">
-                            <input class="head-search" type="search" placeholder="Поиск">
-                            <img class="search-img" src="img/head/search.svg" alt="img">
-                        </div>
-                    </div>
+                        <form class="head-inner_menu__item">
+                            <input type="text" placeholder="Поиск" class="head-search" name="search">
+                            <button type="submit"></button>
+                        </form>
+                    </nav>
                 </div>
             </div>
-        </section>
+        </header>
 
         <section class="burger">
             <a href="#" class="menu-link">
                 <span></span>
             </a>
     
-            <div class="menu">
-                <div class="lank">
+            <nav class="menu">
+                <div class="main-cat-link">
                     <div class="panel-head">
-                        <div class="click catalogs"> <a href="#">Каталог товаров</a> <img class="cat-arrow" src="img/head/arrow.svg" alt="img">
+                        <div class="click catalogs"> <a href="#">Каталог товаров</a> <img class="cat-arrow"
+                                src="img/head/arrow.svg" alt="img">
                             <div class="panel-collapse">
-                                <div class="click mt"><img class="catalogs-img" src="img/main/category-1.svg" alt="img"> <div class="category" href="#">Спецодежда</div>
+                                <div class="click mt"><img class="catalogs-img" src="img/main/category-1.svg" alt="img">
+                                    <div class="categoryA" href="#">Спецодежда</div>
                                     <div class="panel-collapse">
-                                        <div class="click"> <a class="subcategory1" href="#">Одноразовая одежда</a></div>
+                                        <div class="click"> <a class="subcategory1" href="#">Одноразовая одежда</a>
+                                        </div>
                                         <div class="click"> <a class="subcategory1" href="#">Комбинезоны</a></div>
                                         <div class="click"> <a class="subcategory1" href="#">Полукомбинезоны</a></div>
                                         <div class="click"> <a class="subcategory1" href="#">Куртки</a></div>
@@ -120,7 +123,8 @@
                             </div>
 
                             <div class="panel-collapse">
-                                <div class="click"><img class="catalogs-img" src="img/main/category-1.svg" alt="img"> <div class="category" href="#">Спецобувь</div>
+                                <div class="click"><img class="catalogs-img" src="img/main/category-1.svg" alt="img">
+                                    <div class="categoryA" href="#">Спецобувь</div>
                                     <div class="panel-collapse">
                                         <div class="click"> <a class="subcategory1" href="#">Ботинки рабочие</a></div>
                                         <div class="click"> <a class="subcategory1" href="#">Сапоги рабочие</a></div>
@@ -131,20 +135,27 @@
                             </div>
 
                             <div class="panel-collapse">
-                                <div class="click"><img class="catalogs-img" src="img/main/category-1.svg" alt="img"> <div class="category" href="#">Средства защиты</div>
+                                <div class="click"><img class="catalogs-img" src="img/main/category-1.svg" alt="img">
+                                    <div class="categoryA" href="#">Средства защиты</div>
                                     <div class="panel-collapse">
                                         <div class="click"> <a class="subcategory1" href="#">Защита головы</a></div>
-                                        <div class="click"> <a class="subcategory1" href="#">Защита глаз и лица</a> </div>
-                                        <div class="click"> <a class="subcategory1" href="#">Защита органов дыхания</a> </div>
-                                        <div class="click"> <a class="subcategory1" href="#">Защита органов слуха</a> </div>
-                                        <div class="click"> <a class="subcategory1" href="#">Защита от падения с высоты</a></div>
-                                        <div class="click"> <a class="subcategory1" href="#">Наборы защитного оборудования</a></div>
+                                        <div class="click"> <a class="subcategory1" href="#">Защита глаз и лица</a>
+                                        </div>
+                                        <div class="click"> <a class="subcategory1" href="#">Защита органов дыхания</a>
+                                        </div>
+                                        <div class="click"> <a class="subcategory1" href="#">Защита органов слуха</a>
+                                        </div>
+                                        <div class="click"> <a class="subcategory1" href="#">Защита от падения с
+                                                высоты</a></div>
+                                        <div class="click"> <a class="subcategory1" href="#">Наборы защитного
+                                                оборудования</a></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="panel-collapse">
-                                <div class="click"><img class="catalogs-img" src="img/main/category-1.svg" alt="img"> <div class="category" href="#">Бренды</div>
+                                <div class="click"><img class="catalogs-img" src="img/main/category-1.svg" alt="img">
+                                    <div class="categoryA" href="#">Бренды</div>
                                     <div class="panel-collapse">
                                         <div class="click"> <a class="subcategory1" href="#">AlBert</a></div>
                                         <div class="click"> <a class="subcategory1" href="#">Amyto</a></div>
@@ -160,22 +171,21 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <div class="link"><a href="#item1"">Доставка</a></div>
-                <div class="link"><a href="#item1"">О нас</a></div>
-                <div class="link"><a href="#item1"">Контакты</a></div>
+                <div class="link"><a href="#item1">Доставка</a></div>
+                <div class="link"><a href="#item1">О нас</a></div>
+                <div class="link"><a href="#contact">Контакты</a></div>
                 <div class="link">
                     <a class="facebook" href="#"><img src="img/head/hover-facebook.svg" alt="img"></a>
                     <a class="insta" href="#"><img src="img/head/hover-insta.svg" alt="img"></a>
                 </div>
-                <div class="">
-                    <input class="burger-search" type="search" placeholder="Поиск">
+                <form>
+                    <input class="burger-search" type="text" placeholder="Поиск" name="search">
                     <button class="burger-button">ок</button>
-                </div>
-            </div>
+                </form>
+            </nav>
         </section>
 
         <section class="error">
@@ -186,7 +196,7 @@
             </div>
         </section>
 
-        <section class="footer">
+        <footer class="footer">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4 col-lg-3">
@@ -213,13 +223,15 @@
                     </div>
 
                     <div class="col-12 col-sm-12 col-md-4 col-lg-3">
-                        <div class="footer-label">Поиск по сайту</div>
-                        <input type="search" class="footer-input" placeholder="Найти">
-                        <button class="footer-button">ок</button>
+                       <form>
+                            <div class="footer-label">Поиск по сайту</div>
+                            <input type="text" class="footer-input" placeholder="Найти" name="search">
+                            <button class="footer-button">ок</button>
+                       </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>

@@ -165,9 +165,23 @@
         display: inline-block;
         overflow-x: visible;
     }
+    .showcase {
+        display: none;
+    }
+    .showcase-small {
+        display: block;
+    }
+    .card {
+        margin-right: 20px;
+    }
 }
 @media screen and (min-width: 577px) {
-    
+    .showcase {
+        display: block;
+    }
+    .showcase-small {
+        display: none;
+    }
     .slick-prev:before,
     .slick-next:before {
         color: #049FFB;
